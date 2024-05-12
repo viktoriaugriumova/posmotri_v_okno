@@ -172,11 +172,14 @@ video {
   cursor: pointer;
 }
 
-/* .search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  content: '';
   width: 15px;
   height: 15px;
+  margin: 1px;
   background-color: rgba(255, 255, 255, 1);
-} */
+}
 
 
 .title {
