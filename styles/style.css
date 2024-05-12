@@ -32,6 +32,10 @@ fieldset {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+}
+
 ul,
 ol {
   list-style: none;
@@ -39,6 +43,14 @@ ol {
 
 video {
   width: 100%;
+}
+
+.button {
+  width: 194px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
 }
 
 .page {
@@ -67,6 +79,8 @@ video {
 .search-form {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 16px;
 }
 
 .search-form__fieldset-title {
@@ -75,6 +89,20 @@ video {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .title {
@@ -146,3 +174,6 @@ video {
   color: rgba(255, 255, 255, 1);
 }
 
+.more-button {
+  width: 100%;
+}
