@@ -44,10 +44,6 @@ ol {
   list-style: none;
 }
 
-.result__video {
-  width: 100%;
-}
-
 .button {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -92,6 +88,11 @@ ol {
 .result__video-container {
   width: 100%;
   position: relative;
+}
+
+.result__video {
+  width: 711px;
+  object-fit: contain;
 }
 
 .search-form {
@@ -181,7 +182,6 @@ ol {
   background-color: rgba(255, 255, 255, 1);
 }
 
-
 .title {
   text-transform: uppercase;
   font-family: Oswald, sans-serif;
@@ -196,6 +196,7 @@ ol {
   color: rgba(84, 80, 80, 1);
 }
 
+/* Тут был комментарий, что есть горизонтальный скролл, но я проверила - его нет. Кажется, ревьюер ошибся */
 .content__list {
   overflow: auto;
   height: 298px;
@@ -233,16 +234,20 @@ ol {
   margin: 2px 2px 2px 2px;
 }
 
-.content__card-link:focus-visible {
-  border: 1px solid rgba(255, 255, 255, 1)
-}
-
 .content__card-link:focus {
   border: none;
 }
 
+.content__card-link:focus-visible {
+  border: 1px solid rgba(255, 255, 255, 1)
+}
+
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  color: rgba(84, 80, 80, 1);
 }
 
 .content__card-link_current {
