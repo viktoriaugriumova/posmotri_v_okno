@@ -82,7 +82,6 @@ a {
   align-items: flex-end;
   width: 1140px;
   justify-content: space-between;
-  margin: 133px 30px 233px 30px;
 }
 
 .result {
@@ -90,13 +89,14 @@ a {
 }
 
 .result__video-container {
-  width: 100%;
   position: relative;
+  width: 711px;
 }
 
 .result__video {
-  width: 711px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -107,7 +107,7 @@ a {
 }
 
 .search-form__fieldset {
-  width: 233px;
+  width: 225px;
 }
 
 .search-form__fieldset-title {
@@ -116,11 +116,11 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
+  margin-bottom: 5px;
 }
 
 .search-form__textfield {
   background-color: transparent;
-  border: none;
   appearance: none;
   font-family: inherit; 
   color: inherit;
@@ -128,6 +128,9 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .search-form__textfield:focus {
@@ -136,12 +139,6 @@ a {
 
 .search-form__label {
   display: flex;
-}
-
-.search-form__textfield {
-  border-width: 1px 0px 1px 0px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 1);
 }
 
 .search-form__textfield:active {
@@ -210,14 +207,16 @@ a {
   color: rgba(84, 80, 80, 1);
 }
 
-/* Тут был комментарий, что есть горизонтальный скролл, но я проверила - его нет ни в одном браузере. Кажется, ревьюер ошибся */
 .content__list {
   overflow: auto;
   height: 298px;
   display: flex;
-  row-gap: 30px;
   flex-direction: column;
   position: relative;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
 }
 
 .content__details {
@@ -231,6 +230,14 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.content__video-card-title {
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
+  max-width: 200px;
+}
+
 
 .content__video-card-description-container {
   flex-grow: 1;
