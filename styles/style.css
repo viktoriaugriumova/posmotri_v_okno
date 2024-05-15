@@ -108,6 +108,8 @@ a {
 
 .search-form__fieldset {
   width: 225px;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .search-form__fieldset-title {
@@ -235,13 +237,12 @@ a {
   text-overflow: ellipsis; 
   white-space: nowrap; 
   overflow: hidden;
-  max-width: 200px;
+  max-width: 198px;
 }
 
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding-top: 6px;
 }
 
 .content__video-card-thumbnail {
