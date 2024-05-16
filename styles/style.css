@@ -221,7 +221,7 @@ a {
   position: relative;
 }
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
@@ -236,14 +236,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
-.content__video-card-title {
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
-  overflow: hidden;
-  max-width: 185px;
-}
-
 
 .content__video-card-description-container {
   flex-grow: 1;
@@ -281,6 +273,10 @@ a {
 }
 
 .content__video-card-title {
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
+  max-width: 185px;
   font-family:  Oswald, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
