@@ -91,6 +91,7 @@ a {
 .result__video-container {
   position: relative;
   width: 711px;
+  height: 386px;
 }
 
 .result__video {
@@ -108,7 +109,6 @@ a {
 
 .search-form__fieldset {
   width: 225px;
-  margin-left: 10px;
   margin-bottom: 5px;
 }
 
@@ -164,6 +164,10 @@ a {
 .search-form__checkbox-list {
   display: flex;
   width: fit-content;
+}
+
+.search-form__fieldset:nth-child(even) {
+  margin-left: 13px;
 }
 
 .visually-hidden {
@@ -237,7 +241,7 @@ a {
   text-overflow: ellipsis; 
   white-space: nowrap; 
   overflow: hidden;
-  max-width: 198px;
+  max-width: 190px;
 }
 
 
